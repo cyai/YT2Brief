@@ -1,4 +1,4 @@
-from transcribe import Transcribe
+from yt2brief.transcribe import Transcribe
 
 
 from langchain import PromptTemplate, LLMChain
@@ -34,7 +34,7 @@ class Summarize:
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
         all_splits = text_splitter.split_documents(docs)
 
-        prompt_template = """Write a summary of the following youtube video transcript:
+        prompt_template = """Write a concise summary of the following youtube video transcript. Bullet points would be better and include all the things that is being told in the transcript.:
         {text}
 
 
