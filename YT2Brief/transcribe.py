@@ -5,9 +5,15 @@ from youtube_transcript_api import YouTubeTranscriptApi
 class Transcribe:
     def __init__(self, url) -> None:
         # https://www.youtube.com/watch?v=5NZ4EYkSCcs
-        self.url = url.split("?")[1].split("&")[0].split("=")[1]
+        try:
+            self.url = url.split("?")[1].split("&")[0].split("=")[1]
+        except:
+            self.url = None
 
     def transcribe(self):
+
+        if self.url is None:
+            return None
         srt = YouTubeTranscriptApi.get_transcript(self.url)
 
         transcript = ""

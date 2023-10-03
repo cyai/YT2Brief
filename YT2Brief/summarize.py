@@ -24,10 +24,17 @@ class Summarize:
     def get_transcript(self):
         transcribe = Transcribe(self.url)
 
+        if transcribe.transcribe()==None:
+            return None
+        
         return transcribe.transcribe()
 
     def summarize(self):
         transcript = self.get_transcript()
+        
+        if transcript is None:
+            return "Invalid URL"
+        
         loader = TextLoader(transcript)
         docs = loader.load()
 
