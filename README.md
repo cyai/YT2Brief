@@ -46,3 +46,6 @@ You get the result;
 - The speaker encourages turning one's focus to others and finding a power greater than oneself
 - The speaker imagines a future toast to the new 90s in 2049.
 ```
+
+**TO DO:**
+> Integrate with Notion
