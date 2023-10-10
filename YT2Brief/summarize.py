@@ -1,19 +1,14 @@
-from yt2brief.transcribe import Transcribe
-
-
-from langchain import PromptTemplate, LLMChain
-from langchain.prompts import PromptTemplate
+import os
+from dotenv import load_dotenv
+from YT2Brief.transcribe import Transcribe
+from langchain import LLMChain, PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import TextLoader
 from langchain.chains import StuffDocumentsChain
 
 
-import os
-from dotenv import load_dotenv
-
 load_dotenv()
-
 
 class Summarize:
     def __init__(self, url) -> None:
@@ -23,11 +18,12 @@ class Summarize:
 
     def get_transcript(self):
         transcribe = Transcribe(self.url)
-
-        if transcribe.transcribe()==None:
+        transcript = transcribe.transcribe()
+        
+        if transcript is None:
             return None
         
-        return transcribe.transcribe()
+        return transcript
 
     def summarize(self):
         transcript = self.get_transcript()
@@ -41,9 +37,10 @@ class Summarize:
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
         all_splits = text_splitter.split_documents(docs)
 
-        prompt_template = """Write a concise summary of the following youtube video transcript. Bullet points would be better and include all the things that is being told in the transcript.:
-        {text}
+        prompt_template = """
+        Write a concise summary of the following YouTube video transcript. Bullet points would be better and include all the things that are being told in the transcript:
 
+        {text}
 
         Keep the paragraphs shorter.
         """

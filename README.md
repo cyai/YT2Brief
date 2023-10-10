@@ -1,34 +1,44 @@
 # YT2Brief 📺📝
 
-Hey there, welcome to YT2Brief – where I make watching YouTube videos a breeze! This is just a fun little project I put together to help you turn those lengthy videos into quick, easy-to-digest summaries.
+YT2Brief is a fun project that turns lengthy YouTube videos into quick, easy-to-digest summaries. It uses natural language processing models like Langchain and OpenAI's LLMs to transcribe and summarize video content. 
 
-**What's the deal?**
+## What You Get
 
-You know those times when you want to catch up on some YouTube content, but you don't have hours to spare? That's where YT2Brief comes in. I use some fancy tech like Langchain and our private LLMs, along with OpenAI's LLMs, to transcribe and summarize videos for you.
+- 📜 Snappy summaries of YouTube videos 
+- ⏱️ Save hours of watching long videos
+- 🤖 Cool NLP models like Langchain in action
+- 🔒 Your data stays private thanks to private LLMs
 
-**How it works:**
+## How to Use
 
-1. 🎬 Drop a YouTube link.
-2. ⚙️ Let our tech do its thing.
-3. 📜 Get a snappy summary!
+1. Drop a YouTube link 
+2. Let our tech work its magic
+3. Get an auto-generated summary!
 
-**Why YT2Brief?**
+## Why YT2Brief?
 
--   No more long videos hogging your time.
--   Cool tech like Langchain in action.
--   Your data is safe with us (thanks to private LLMs).
--   OpenAI's LLMs add extra magic.
+- No more long videos hogging your time
+- See awesome NLP models in action
+- We keep your data safe with private LLMs 
+- OpenAI's models add extra magic
 
-So, why not give it a shot? Watch more, in less time. 😎
+## Installation
 
-Just a heads up, this is a pet project, so don't expect perfection. But I promise it's a neat little tool to have fun with.
+To run this project locally:
 
+1. Clone the repo
+2. Run `pip install -r requirements.txt` 
+3. Get API key for OpenAI
+4. Update the your `.env` with your keys 
+5. Run `python run.py`
 
+We'd love you to contribute! Feel free to open PRs with improvements.
 
-**Example:**
+## Example
+
 For the video: https://www.youtube.com/watch?v=8Vt16kTtgm4
 
-You get the result;
+You get the result:
 ```text
 
 - The speaker is at a wine bar celebrating a friend's birthday and hears the phrase "60 is the new 40"
@@ -47,5 +57,10 @@ You get the result;
 - The speaker imagines a future toast to the new 90s in 2049.
 ```
 
-**TO DO:**
-> Integrate with Notion
+## Roadmap
+
+Some ideas for future development:
+
+- Integrate with Notion to save summaries
+
+Let us know if you have any other ideas!
