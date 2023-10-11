@@ -28,30 +28,13 @@ Note: Create and push your PR's to a new branch (`main` is used for production).
 
 - Clone the repository using the following command in your terminal:
 
-```bash
-git clone https://github.com/<your-username>/YT2Brief.git
-cd YT2Brief
-git remote add upstream https://github.com/<upstream-owner>/YT2Brief
-```
-
 - If you have already forked the project, update your copy before working.
 
-```bash
-git remote update
-git checkout <branch-name>
-git rebase upstream/<branch-name>
-```
 
 ### 3 : Branch Policy 🌿
 
 ### Create a new branch after setting up the project locally before making any changes, so as to avoid merge conflicts while making PRs.
 
-Use its name to identify the issue your addressing.Feature , Bug Fix or Enhancement.
-
-```bash
-# It will create a new branch with name Branch_Name and switch to that branch you just created
-git checkout -b branch_name
-```
 
 ### 4 : Work on the issue assigned to you 📕
 
@@ -59,45 +42,11 @@ git checkout -b branch_name
 - Add all the files/folders needed.
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:
 
-```bash
-# To add all new files to branch Branch_Name
-git add .
-
-# To add only a few files to Branch_Name
-git add <some files>
-```
-
 ### 5 : Commit and Push your changes 📦
 
-- To commit give a descriptive message for the convenience of reviewer by :
+- To commit give a descriptive message for the convenience of reviewer
 
-```bash
-# This message get associated with all files you have changed
-git commit -m "message"
-```
-
--Push your code to Github:
-
-```bash
-# To push your work to your remote repository
-git push -u origin Branch_Name
-```
-
-- **NOTE**: A PR should have only one commit. Multiple commits should be squashed. [Learn how to squash commits](https://www.internalpointers.com/post/squash-commits-into-one-git)
-
-### 6 : Work Remotely 📡
-
-```bash
-# To push your work to your remote repository
-git push -u origin Branch_Name
-```
-
-### 7 : Pull Request 🎣
-
-- Go to your repository in browser and click on compare and pull requests.
-  Then add a title and description to your pull request that explains your contribution.
-
-### 8 : Review Phase 🔍
+### 7 : Review Phase 🔍
 
 - 🎉🌟Congratulations! Sit and relax, you've made your contribution to the project. Wait until the PR is reviewed and incorporate changes suggested by the community. After which the PR can be successfully merged.
   🎉🎊
@@ -109,22 +58,6 @@ git push -u origin Branch_Name
 - Don't forget to replace 'your_github_username' with GitHub Username.
 
 - Stage your changes for commit.
-
-```
-git add .
-```
-
-- Commit your changes with a relevant message.
-
-```
-git commit -m "Relevant message"
-```
-
-- Then push your changes to your forked repository.
-
-```
-git push origin my-new-branch
-```
 
 - Finally, create a new pull request from your forked repository
 
