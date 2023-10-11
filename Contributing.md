@@ -99,15 +99,14 @@ git push -u origin Branch_Name
 
 ### 8 : Review Phase 🔍
 
-- 🎉🌟Congratulations! Sit and relax, you've made your contribution to js-dom-snippets project. Wait until the PR is reviewed and incorporate changes suggested by the community. After which the PR can be successfully merged.
+- 🎉🌟Congratulations! Sit and relax, you've made your contribution to the project. Wait until the PR is reviewed and incorporate changes suggested by the community. After which the PR can be successfully merged.
   🎉🎊
 
 ### Note 📒
 
-- Make sure to align your button centered horizontally as well as vertically.
+- Make sure your code is working locally after the changes.
+
 - Don't forget to replace 'your_github_username' with GitHub Username.
-- If you are adding more than one buttons then give proper names such as Spyware007_1,Spyware007_2, your_github_username_1 and so on for all the buttons.
-- Make sure to add your button in the correct section.
 
 - Stage your changes for commit.
 
@@ -132,8 +131,6 @@ git push origin my-new-branch
 - Wait for your PR review and merge approval!
 
 - **Star this repository if you had fun contributing!**
-
-- Then link your uploaded images to README.md files.
 
 - Then wait for your PR to be merged.
 
