@@ -1,5 +1,6 @@
 from YT2Brief.summarize import Summarize
 
+
 def main():
     while True:
         video_url = input("Enter the URL of the video: ")
@@ -11,6 +12,7 @@ def main():
         is_continue = input("Do you want to resummarize? (y/n): ").strip().lower()
         if is_continue != "y":
             break
+
 
 if __name__ == "__main__":
     main()

@@ -27,7 +27,9 @@ class Transcribe:
 
             transcript = transcript.replace("\n", " ")
 
-            with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".txt") as transcript_file:
+            with tempfile.NamedTemporaryFile(
+                mode="w", delete=False, suffix=".txt"
+            ) as transcript_file:
                 transcript_file.write(transcript)
 
             return transcript_file.name
