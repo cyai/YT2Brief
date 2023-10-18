@@ -1,5 +1,11 @@
 name: Lint
-on: [push, pull_request, workflow_dispatch]
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
 
 jobs:
   lint:
