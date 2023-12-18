@@ -6,29 +6,41 @@ Hey there, welcome to YT2Brief – where I make watching YouTube videos a breeze
 
 You know those times when you want to catch up on some YouTube content, but you don't have hours to spare? That's where YT2Brief comes in. I use some fancy tech like Langchain and our private LLMs, along with OpenAI's LLMs, to transcribe and summarize videos for you.
 
-**How it works:**
+### How do I use it?
 
-1. 🎬 Drop a YouTube link.
-2. ⚙️ Let our tech do its thing.
-3. 📜 Get a snappy summary!
+-   **Clone the repo**
+    ```bash
+    git clone https://github.com/cyai/yt2Brief/
+    ```
+-   **Install the dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+-   **Set environmental variables**
+    -   Create a `.env` file in the root directory
+    -   Add the following variables to the file
+        ```bash
+        OPENAI_API_KEY=<your_openai_api_key>
+        NOTION_API_KEY=<notion_api_key>
+        NOTION_DATABASE_ID=<notion_database_id>
+        ```
+        > Follow the instructions [here](https://developers.notion.com/docs/create-a-notion-integration) to get your notion api key and the database id
 
-**Why YT2Brief?**
+-   **Run the script**
+    ```bash
+    python main.py
+    ```
+-   **Enter the YouTube video URL and review your summary and enjoy 😊**
 
--   No more long videos hogging your time.
--   Cool tech like Langchain in action.
--   Your data is safe with us (thanks to private LLMs).
--   OpenAI's LLMs add extra magic.
 
-So, why not give it a shot? Watch more, in less time. 😎
 
 Just a heads up, this is a pet project, so don't expect perfection. But I promise it's a neat little tool to have fun with.
 
-
-
-**Example:**
+### Example:
 For the video: https://www.youtube.com/watch?v=8Vt16kTtgm4
 
-You get the result;
+You get the result:
+
 ```text
 
 🎥 Video Summary: Embracing Aging and Defying Societal Norms 🎉
@@ -53,4 +65,5 @@ Let's celebrate the beauty of aging and rewrite the story! 💪
 ```
 
 **TO DO:**
-> Integrate with Notion
+
+> Beautify Notion page

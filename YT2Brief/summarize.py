@@ -26,7 +26,7 @@ load_dotenv()
 class Summarize:
     def __init__(self, url) -> None:
         self.url = url
-        self.REPLICATE_API_TOKEN = os.getenv("OPENAI_API_KEY")
+        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
         self.llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
         # self.llm = Replicate(
         #     model="meta/llama-2-70b-chat:02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3",
