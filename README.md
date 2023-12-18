@@ -9,30 +9,33 @@ YT2Brief is a fun project that turns lengthy YouTube videos into quick, easy-to-
 - 🤖 Cool NLP models like Langchain in action
 - 🔒 Your data stays private thanks to private LLMs
 
-## How to Use
+### How do I use it?
 
-1. Drop a YouTube link 
-2. Let our tech work its magic
-3. Get an auto-generated summary!
+-   **Clone the repo**
+    ```bash
+    git clone https://github.com/cyai/yt2Brief/
+    ```
+-   **Install the dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+-   **Set environmental variables**
+    -   Create a `.env` file in the root directory
+    -   Add the following variables to the file
+        ```bash
+        OPENAI_API_KEY=<your_openai_api_key>
+        NOTION_API_KEY=<notion_api_key>
+        NOTION_DATABASE_ID=<notion_database_id>
+        ```
+        > Follow the instructions [here](https://developers.notion.com/docs/create-a-notion-integration) to get your notion api key and the database id
 
-## Why YT2Brief?
+-   **Run the script**
+    ```bash
+    python main.py
+    ```
+-   **Enter the YouTube video URL and review your summary and enjoy 😊**
 
-- No more long videos hogging your time
-- See awesome NLP models in action
-- We keep your data safe with private LLMs 
-- OpenAI's models add extra magic
 
-## Installation
-
-To run this project locally:
-
-1. Clone the repo
-2. Run `pip install -r requirements.txt` 
-3. Get API key for OpenAI
-4. Update the your `.env` with your keys 
-5. Run `python run.py`
-
-We'd love you to contribute! Feel free to open PRs with improvements.
 
 ## Example
 
@@ -61,10 +64,6 @@ You get the result:
 Let's celebrate the beauty of aging and rewrite the story! 💪
 ```
 
-## Roadmap
+**TO DO:**
 
-Some ideas for future development:
-
-- Integrate with Notion to save summaries
-
-Let us know if you have any other ideas!
+> Beautify Notion page

@@ -1,0 +1,16 @@
+{
+    "summary": {
+        "tone": "funny",
+        "bullet-points": {
+            "use": "true",
+            "average-sentence-length": "15"
+        },
+        "paragraphs": {
+            "use": "flase",
+            "average-paragraph-length": "30"
+        },
+
+        "emojis": "true",
+        "markdown": "true"
+    }
+}
