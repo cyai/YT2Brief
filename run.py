@@ -3,6 +3,12 @@ from yt2brief.notion_integraion.create_page import Notion
 import asyncio
 
 
+def main():
+    while True:
+        video_url = input("Enter the URL of the video: ")
+        summarizer = Summarize(video_url)
+        summary = summarizer.summarize()
+
 async def main():
     url = input("Enter the URL of the video: ")
     isContinue = True
@@ -46,3 +52,4 @@ async def main():
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
+

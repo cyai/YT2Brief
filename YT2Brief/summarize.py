@@ -3,6 +3,7 @@ from yt2brief.fromat import Reformat
 
 from langchain import PromptTemplate, LLMChain
 from langchain.prompts import PromptTemplate
+
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import TextLoader
 from functools import partial
@@ -21,7 +22,6 @@ from dotenv import load_dotenv
 import json
 
 load_dotenv()
-
 
 class Summarize:
     def __init__(self, url) -> None:
@@ -48,6 +48,7 @@ class Summarize:
 
     async def get_transcript(self):
         transcribe = Transcribe(self.url)
+
 
         transcript_file = transcribe.transcribe()
 
@@ -83,6 +84,7 @@ class Summarize:
     async def summarize(self):
         transcript = await self.get_transcript()
 
+
         if transcript is None:
             return "Invalid URL"
 
@@ -93,6 +95,7 @@ class Summarize:
 
         prompt_template = """Write a concise summary of the following youtube video transcript. Include all the things that is being told in the transcript:
         {context}
+
 
         Make the summary descriptive and concise. Consider all the points that are being told in the transcript.
         """

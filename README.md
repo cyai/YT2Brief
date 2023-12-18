@@ -1,10 +1,13 @@
 # YT2Brief 📺📝
 
-Hey there, welcome to YT2Brief – where I make watching YouTube videos a breeze! This is just a fun little project I put together to help you turn those lengthy videos into quick, easy-to-digest summaries.
+YT2Brief is a fun project that turns lengthy YouTube videos into quick, easy-to-digest summaries. It uses natural language processing models like Langchain and OpenAI's LLMs to transcribe and summarize video content. 
 
-**What's the deal?**
+## What You Get
 
-You know those times when you want to catch up on some YouTube content, but you don't have hours to spare? That's where YT2Brief comes in. I use some fancy tech like Langchain and our private LLMs, along with OpenAI's LLMs, to transcribe and summarize videos for you.
+- 📜 Snappy summaries of YouTube videos 
+- ⏱️ Save hours of watching long videos
+- 🤖 Cool NLP models like Langchain in action
+- 🔒 Your data stays private thanks to private LLMs
 
 ### How do I use it?
 
@@ -34,15 +37,12 @@ You know those times when you want to catch up on some YouTube content, but you 
 
 
 
-Just a heads up, this is a pet project, so don't expect perfection. But I promise it's a neat little tool to have fun with.
+## Example
 
-### Example:
 For the video: https://www.youtube.com/watch?v=8Vt16kTtgm4
 
 You get the result:
-
 ```text
-
 🎥 Video Summary: Embracing Aging and Defying Societal Norms 🎉
 
 📝 The video transcript explores the cultural perception of aging and challenges the notion that "60 is the new 40." The speaker, a geriatric nurse, advocates for embracing and celebrating one's age instead of trying to relive younger years.
