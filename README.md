@@ -20,6 +20,7 @@ YT2Brief is a fun project that turns lengthy YouTube videos into quick, easy-to-
     pip install -r requirements.txt
     ```
 -   **Set environmental variables**
+
     -   Create a `.env` file in the root directory
     -   Add the following variables to the file
         ```bash
@@ -35,9 +36,9 @@ YT2Brief is a fun project that turns lengthy YouTube videos into quick, easy-to-
     ```
 -   **Enter the YouTube video URL and review your summary and enjoy 😊**
 
+Just a heads up, this is a pet project, so don't expect perfection. But I promise it's a neat little tool to have fun with.
 
-
-## Example
+### Example:
 
 For the video: https://www.youtube.com/watch?v=8Vt16kTtgm4
 
