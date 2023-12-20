@@ -1,3 +1,4 @@
+from yt2brief.utils.get_title import get_title
 import requests
 import json
 import dotenv
@@ -7,14 +8,14 @@ dotenv.load_dotenv()
 
 
 class Notion:
-    def __init__(self, content, title) -> None:
+    def __init__(self, content, url) -> None:
         self.content = str(content)
         self.url = "https://api.notion.com/v1/pages"
-        self.title = title
+        self.title = get_title(url)
         self.database_id = os.getenv("NOTION_DATABASE_ID")
         self.notion_api_key = os.getenv("NOTION_API_KEY")
 
-    def create_page(self, content):
+    def create_page(self):
         # print(type(content))
 
         payload = {
