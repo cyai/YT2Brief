@@ -28,7 +28,7 @@ async def main():
         usr_continue = input("Do you want to resummarize? (y/n): ")
         if usr_continue == "n":
             notion = Notion(str(summary), url)
-            notion.create_page(str(summary))
+            notion.create_page()
             break
 
 
