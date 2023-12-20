@@ -19,12 +19,8 @@ class Notion:
 
         payload = {
             "parent": {"database_id": f"{self.database_id}"},
-            "icon": {"emoji": "🥬"},
-            "cover": {
-                "external": {
-                    "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Tuscankale.jpg"
-                }
-            },
+            "icon": {"emoji": "✨"},
+            "cover": {"external": {"url": f"{self.url}"}},
             "properties": {"Name": {"title": [{"text": {"content": f"{self.title}"}}]}},
             "children": [
                 {
@@ -45,9 +41,6 @@ class Notion:
                                 "type": "text",
                                 "text": {
                                     "content": self.content,
-                                    "link": {
-                                        "url": "https://en.wikipedia.org/wiki/Lacinato_kale"
-                                    },
                                 },
                             }
                         ]

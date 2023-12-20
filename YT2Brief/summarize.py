@@ -23,9 +23,9 @@ import json
 
 load_dotenv()
 
+
 class Summarize:
-    def __init__(self, url) -> None:
-        self.url = url
+    def __init__(self) -> None:
         self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
         self.llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
         # self.llm = Replicate(
@@ -46,9 +46,8 @@ class Summarize:
             | StrOutputParser()
         )
 
-    async def get_transcript(self):
-        transcribe = Transcribe(self.url)
-
+    async def get_transcript(self, url):
+        transcribe = Transcribe(url)
 
         transcript_file = transcribe.transcribe()
 
@@ -81,9 +80,8 @@ class Summarize:
             collapse_ct += 1
         return docs
 
-    async def summarize(self):
-        transcript = await self.get_transcript()
-
+    async def summarize(self, url):
+        transcript = await self.get_transcript(url)
 
         if transcript is None:
             return "Invalid URL"
