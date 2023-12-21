@@ -1,0 +1,3 @@
+[console_scripts]
+yt2brief = yt2brief.cli:main
+yt2brief-setup = yt2brief.config_keys:setup

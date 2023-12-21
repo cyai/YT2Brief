@@ -3,7 +3,7 @@ import requests
 import json
 
 
-def get_title(url):
+def fetch_title(url):
     request = requests.get(url)
     text = BeautifulSoup(request.text, "html.parser")
 
